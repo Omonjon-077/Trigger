@@ -31,7 +31,7 @@ accordionItems.forEach((item) => {
 
         toggleItem(item)
 
-        if(openItem && openItem!== item){
+        if (openItem && openItem !== item) {
             toggleItem(openItem)
         }
     })
@@ -51,17 +51,17 @@ const toggleItem = (item) => {
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id')
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
@@ -69,10 +69,10 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/
-function scrollUp(){
+function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    if (this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -91,9 +91,9 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
@@ -112,14 +112,14 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 2500,
     delay: 400,
-    reset: true
+    // reset: true
 })
 
 sr.reveal('.home__title, .popular__container, .subscribe__container, .footer__container')
-sr.reveal('.home__description, .footer__info', {delay: 500})
-sr.reveal('.home__search', {delay: 600})
-sr.reveal('.home__value', {delay: 700})
-sr.reveal('.home__images', {delay: 800, origin: 'bottom'})
-sr.reveal('.logos__img', {interval: 100})
-sr.reveal('.value__images, .contact__content', {origin: 'left'})
-sr.reveal('.value__content, .contact__images', {origin: 'right'})
+sr.reveal('.home__description', { delay: 500 })
+sr.reveal('.home__search', { delay: 600 })
+sr.reveal('.home__value', { delay: 700 })
+sr.reveal('.home__images', { delay: 800, origin: 'bottom' })
+sr.reveal('.logos__img, .footer__content-box', { interval: 200, origin: 'top' })
+sr.reveal('.value__images, .contact__content', { origin: 'left' })
+sr.reveal('.value__content, .contact__images', { origin: 'right' })
