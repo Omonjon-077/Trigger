@@ -465,6 +465,8 @@ body.dark-theme {
 }
 
 .popular__img {
+  width: 300px;
+  height: 150px;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
