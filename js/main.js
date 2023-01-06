@@ -6,19 +6,147 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SWIPER POPULAR ===============*/
-var swiperPopular = new Swiper(".popular__container", {
-    spaceBetween: 32,
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    loop: true,
+/*=============== SWIPER LOGOS ===============*/
+if ($(".logosSwiper").length) {
+    var swiperPopular = new Swiper(".logosSwiper", {
+        autoplay: {
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+            delay: 3200,
+        },
+        speed: 2500,
+        slidesPerView: 4,
+        grabCursor: true,
+        loop: true,
 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 5
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 5
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is >= 992px
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 15
+            }
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+}
+/*=============== SWIPER PROJECTS ===============*/
+if ($(".project__container").length) {
+    var swiperPopular = new Swiper(".project__container", {
+        autoplay: {
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+            delay: 3400,
+        },
+        speed: 700,
+        slidesPerView: 3,
+        grabCursor: true,
+        loop: true,
+
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 5
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 5
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is >= 992px
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            }
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+}
+
+/*=============== SWIPER LEADERSHIP ===============*/
+if ($(".leadership__container").length) {
+    var swiperPopular = new Swiper(".leadership__container", {
+        autoplay: {
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+            delay: 3400,
+        },
+        slidesPerView: 3,
+        grabCursor: true,
+        loop: true,
+
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 5
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 5
+            },
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is >= 992px
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            }
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+}
 
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.value__accordion-item')
@@ -107,19 +235,19 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true
-})
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '60px',
+//     duration: 2500,
+//     delay: 400,
+//     reset: true
+// })
 
-sr.reveal('.home__title, .popular__container, .subscribe__container, .footer__container')
-sr.reveal('.home__description', { delay: 500 })
-sr.reveal('.home__search', { delay: 600 })
-sr.reveal('.home__value', { delay: 700 })
-sr.reveal('.home__images', { delay: 800, origin: 'bottom' })
-sr.reveal('.logos__img, .footer__content-box', { interval: 200, origin: 'top' })
-sr.reveal('.value__images, .contact__content', { origin: 'left' })
-sr.reveal('.value__content, .contact__images', { origin: 'right' })
+// sr.reveal('.home__title, .popular__container, .subscribe__container, .footer__container')
+// sr.reveal('.home__description', { delay: 500 })
+// sr.reveal('.home__search', { delay: 600 })
+// sr.reveal('.home__value', { delay: 700 })
+// sr.reveal('.home__images', { delay: 800, origin: 'bottom' })
+// sr.reveal('.logos__container, .footer__content-box', { interval: 200, origin: 'top' })
+// sr.reveal('.value__images, .contact__content', { origin: 'left' })
+// sr.reveal('.value__content, .contact__images', { origin: 'right' })
