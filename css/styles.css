@@ -700,6 +700,8 @@ body.dark-theme {
   height: 150px;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  /* object-fit: cover; */
+  /* object-position: center; */
 }
 
 .leadership__data {
