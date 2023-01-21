@@ -462,9 +462,23 @@ body.dark-theme {
 }
 
 /*=============== LOGOS ===============*/
+.logos__container {
+  padding: 20px 10px;
+}
+
 .logos__img {
-  max-width: 225px;
+  /* max-width: 225px; */
   width: 100%;
+  padding-left: 10px;
+  padding: 13px;
+  border-radius: 15px;
+  background-color: #fff;
+  margin: 20px 0;
+  transition: .4s;
+}
+
+.logos__img:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .logos__img img {
@@ -667,7 +681,7 @@ body.dark-theme {
 
 
 
-/*=============== Leadershi ===============*/
+/*=============== LEADERSHIP ===============*/
 .leadership__container {
   padding: 1rem 0 5rem;
 }
@@ -692,14 +706,15 @@ body.dark-theme {
   padding: 0 1rem 0 .5rem;
 }
 
-.leadership__price {
-  font-size: var(--h2-font-size);
+.leadership__rank {
+  font-size: var(--h3-font-size);
   color: var(--text-color);
   margin-bottom: .25rem;
 }
 
-.leadership__price span {
+.leadership__rank span {
   color: var(--second-color);
+  margin-right: 7px;
 }
 
 .leadership__title {
@@ -707,9 +722,9 @@ body.dark-theme {
   margin-bottom: .75rem;
 }
 
-.leadership__description {
+/* .leadership__description {
   font-size: var(--small-font-size);
-}
+} */
 
 .leadership__card:hover {
   box-shadow: 0 12px 16px hsla(228, 66%, 45%, .1);
@@ -846,12 +861,26 @@ body.dark-theme {
 
 /*=============== FOOTER ===============*/
 
+.footer {
+  position: relative;
+}
+
 .footer__container {
   row-gap: 2.5rem;
 }
 
+.particles__js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .footer__logo {
   position: relative;
+  z-index: 10;
 }
 
 .footer__logo span {
@@ -891,9 +920,14 @@ body.dark-theme {
   row-gap: .5rem;
 }
 
+.footer__links li {
+  z-index: 10;
+}
+
 .footer__link {
   color: var(--text-color);
   transition: .3s;
+  /* z-index: 10; */
 }
 
 .footer__link:hover {
@@ -909,6 +943,7 @@ body.dark-theme {
   font-size: 1.25rem;
   color: var(--text-color);
   transition: .3s;
+  z-index: 10;
 }
 
 .footer__social-link:hover {
@@ -926,6 +961,7 @@ body.dark-theme {
   flex-direction: column;
   text-align: center;
   row-gap: 1.5rem;
+  z-index: 10;
 }
 
 .footer__copy,
@@ -933,6 +969,7 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color);
+  z-index: 10;
 }
 
 .footer__privacy {
