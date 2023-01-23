@@ -16,6 +16,9 @@
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
+    <!--=============== BOOTSTRAP 5 CSS ===============-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -25,7 +28,7 @@
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <nav class="nav container">
+        <nav class="nav container-self">
             <a href="#" class="nav__logo">
                 <span></span>
                 <svg class="nav__logo-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="120px" height="50px"
@@ -128,7 +131,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home section position-relative" id="home">
-            <div class="home__container container grid">
+            <div class="home__container container-self grid">
                 <div class="home__data">
                     <h1 class="home__title z-index-9">
                         The <br> Trigger <br> IT Company
@@ -143,35 +146,35 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
                         <button class="button">Search</button>
                     </form> -->
 
-                    <div class="home__value">
+                    <!-- <div class="home__value">
 
-                        <div class="">
-                            <h1 class="home__value-number">
-                                9K <span>+</span>
-                            </h1>
-                            <span class="home__value-description">
-                                Premium <br> Product
-                            </span>
-                        </div>
+                            <div class="">
+                                <h1 class="home__value-number">
+                                    9K <span>+</span>
+                                </h1>
+                                <span class="home__value-description">
+                                    Premium <br> Product
+                                </span>
+                            </div>
 
-                        <div class="">
-                            <h1 class="home__value-number">
-                                2K <span>+</span>
-                            </h1>
-                            <span class="home__value-description">
-                                Happy <br> Customer
-                            </span>
-                        </div>
+                            <div class="">
+                                <h1 class="home__value-number">
+                                    2K <span>+</span>
+                                </h1>
+                                <span class="home__value-description">
+                                    Happy <br> Customer
+                                </span>
+                            </div>
 
-                        <div class="">
-                            <h1 class="home__value-number">
-                                28K <span>+</span>
-                            </h1>
-                            <span class="home__value-description">
-                                Awards <br> Winning
-                            </span>
-                        </div>
-                    </div>
+                            <div class="">
+                                <h1 class="home__value-number">
+                                    28K <span>+</span>
+                                </h1>
+                                <span class="home__value-description">
+                                    Awards <br> Winning
+                                </span>
+                            </div>
+                    </div> -->
                 </div>
 
                 <div class="home__images position-relative z-index-9">
@@ -181,8 +184,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
                         <img src="img/trigger-work-room.jpg" alt="home">
                     </div> -->
 
-                    <lottie-player autoplay loop mode="normal"
-                        src="camputer.json" style="width: 100%">
+                    <lottie-player autoplay loop mode="normal" src="camputer.json" style="width: 100%">
                     </lottie-player>
                 </div>
             </div>
@@ -191,7 +193,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
         <!--==================== LOGOS ====================-->
         <section class="logos section">
-            <div class="container logos__container">
+            <div class="container-self logos__container">
                 <div class="logosSwiper swiper">
                     <div class="swiper-wrapper">
                         <article class="swiper-slide">
@@ -225,7 +227,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
         <!--==================== PROJECTS ====================-->
         <section class="project section" id="projects">
-            <div class="container">
+            <div class="container-self">
                 <span class="section__subtitle">Works</span>
                 <h2 class="section__title">
                     Our Projects<span>.</span>
@@ -330,7 +332,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
         <!--==================== VALUE ====================-->
         <section class="value section" id="value">
-            <div class="value__container container grid">
+            <div class="value__container container-self grid">
                 <div class="value__images">
                     <div class="value__orbe"></div>
 
@@ -438,7 +440,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
         <!--==================== LEADERSHIP ====================-->
         <section class="leadership section" id="ladership">
-            <div class="container">
+            <div class="container-self">
                 <span class="section__subtitle">Leadership</span>
                 <h2 class="section__title">
                     Employees<span>.</span>
@@ -575,9 +577,93 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
             </div>
         </section>
 
+        <!--==================== TESTIMONIALS ====================-->
+        <section class="testimonials section">
+            <div class="container-self">
+                <div class="wrapper">
+                    <span class="section__subtitle">People</span>
+                    <h2 class="section__title">
+                        Testimonials<span>.</span>
+                    </h2>
+                    <!-- Slider main container -->
+                    <div class="testimonialsSwiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="swiper-avatar"><img
+                                                src="https://bikes-n-stuff.com/wp-content/uploads/sb-instagram-feed-images/julietelliott.jpg">
+                                        </div>
+                                        <p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+                                            lacinia odio
+                                            sem nec elit. Donec id elit non mi porta gravida at eget metus. Aenean eu
+                                            leo quam.
+                                            Pellentesque ornare sem lacinia quam venenatis vestibulum."</p>
+                                        <p class="cite">- Juliet Elliott, Cyclist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="swiper-avatar"><img
+                                                src="https://dgtzuqphqg23d.cloudfront.net/aqUDdv8fco91cPIeBAetAcpDfUEOIuaIrivU11PMnBs-2048x1942.jpg">
+                                        </div>
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
+                                            consectetur est
+                                            at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                            Curabitur
+                                            blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat
+                                            porttitor
+                                            ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
+                                            consectetur ac,
+                                            vestibulum at eros."</p>
+                                        <p class="cite">- Katie Kookaburra, Cyclist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="swiper-avatar"><img
+                                                src="https://dgalywyr863hv.cloudfront.net/pictures/athletes/188112/45714/8/full.jpg">
+                                        </div>
+                                        <p>"Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+                                            lacinia odio
+                                            sem nec elit. Donec id elit non mi porta gravida at eget metus. Aenean eu
+                                            leo quam.
+                                            Pellentesque ornare sem lacinia quam venenatis vestibulum."</p>
+                                        <p class="cite">- Alison Tetrick, Cyclist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- If we need pagination -->
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-nav-wrapper">
+                            <div class="swiper-button-prev">
+                                <i class="bx bx-chevron-left"></i>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                            <div class="swiper-button-next">
+                                <i class="bx bx-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
         <!--==================== CONTACT ====================-->
         <section class="contact section" id="contact">
-            <div class="contact__container container grid">
+            <div class="contact__container container-self grid">
                 <div class="contact__images">
                     <div class="contact__orbe"></div>
 
@@ -680,7 +766,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
         <!--==================== SUBSCRIBE ====================-->
         <section class="subscribe section">
-            <div class="subscribe__container container">
+            <div class="subscribe__container container-self">
                 <h1 class="subscribe__title">
                     Get Started with Trigger
                 </h1>
@@ -695,10 +781,11 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
         </section>
     </main>
 
+
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
         <!-- <div id="particles-js" class="particles__js"></div> -->
-        <div class="footer__container container grid">
+        <div class="footer__container container-self grid">
             <div class="">
                 <a href="#!" class="footer__logo">
                     <span></span>
@@ -749,8 +836,8 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
                     </svg>
                 </a>
                 <p class="footer__description">
-                    Our vision is to make all people <br>
-                    the best place to live for them.
+                    We bring you things that are <br>
+                    easy and convenient for people
                 </p>
             </div>
 
@@ -841,7 +928,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
             </div>
         </div>
 
-        <div class="footer__info container">
+        <div class="footer__info container-self">
             <span class="footer__copy">
                 &#169; by <a style="color: hsl(228, 66%, 53%); text-decoration: none;"
                     href="https://omonjon-077.github.io/mini-Portfolio/">Omonjon Sobirov.</a> All rigths reserved 2023
@@ -874,6 +961,9 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
     <!--=============== LOTTIE-PLAYER JS ===============-->
     <script src="js/lottie-player.js"></script>
+
+    <!--=============== BOOTSTRAP 5 JS ===============-->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <!--=============== PARTICLE JS ===============-->
     <script src="js/particles.js"></script>

@@ -143,6 +143,50 @@ if ($(".leadership__container").length) {
     });
 }
 
+/*=============== TESTIMONIALS | SWIPER ===============*/
+const swiper = new Swiper(".testimonialsSwiper", {
+    autoplay: {
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+        delay: 3600,
+    },
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    grabCursor: true,
+    autoHeight: false,
+    centeredSlides: true,
+    slidesPerView: 1,
+    // Responsive breakpoints
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        }
+    },
+
+    // If we need pagination
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true
+    //   },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+
+    // And if we need scrollbar
+    /*scrollbar: {
+    el: '.swiper-scrollbar',
+  },*/
+});
+
 /*=============== VALUE ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.value__accordion-item')
 
