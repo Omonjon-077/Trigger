@@ -133,7 +133,7 @@ body.dark-theme {
 }
 
 .dark-theme .nav__menu,
-.dark-theme .home__img,
+/* .dark-theme .home__img, */
 .dark-theme .project__card:hover,
 .dark-theme .leadership__card:hover,
 .dark-theme .value__img,
@@ -206,7 +206,7 @@ body.dark-theme {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -263,7 +263,7 @@ body.dark-theme {
 
 .nav__logo span {
   position: absolute;
-  top: 5px;
+  top: 7px;
   width: 5px;
   border-radius: 50%;
   height: 5px;
@@ -276,7 +276,12 @@ body.dark-theme {
 .nav__logo-svg {
   fill: white !important;
 }
-
+.position-relative {
+  position: relative;
+}
+.z-index-9 {
+  z-index: 9 !important;
+}
 @media screen and (max-width:1023px) {
   .nav__menu {
     position: fixed;
@@ -416,16 +421,16 @@ body.dark-theme {
   justify-content: center;
 }
 
-.home__orbe {
+/* .home__orbe {
   width: 265px;
   height: 284px;
   background: linear-gradient(180deg,
       hsl(0, 0%, 16%) 93%,
       hsl(0, 0%, 67%) 100%);
   border-radius: 135px 135px 0 0;
-}
+} */
 
-.home__img {
+/* .home__img {
   position: absolute;
   width: 250px;
   height: 300px;
@@ -435,7 +440,7 @@ body.dark-theme {
   align-items: flex-end;
   bottom: -1.5rem;
   box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
-}
+} */
 
 /*=============== BUTTON ===============*/
 .button {
@@ -510,7 +515,7 @@ body.dark-theme {
 
 .project__img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -697,7 +702,7 @@ body.dark-theme {
 
 .leadership__img {
   width: 100%;
-  height: 222px;
+  height: 250px;
   border-radius: 1rem;
   margin-bottom: 1rem;
   /* object-fit: cover; */
@@ -1052,15 +1057,15 @@ body.dark-theme {
     column-gap: 1rem;
   }
 
-  .home__img {
+  /* .home__img {
     width: 220px;
     height: 280px;
-  }
+  } */
 
-  .home__orbe {
+  /* .home__orbe {
     width: 240px;
     height: 264px;
-  }
+  } */
 
   .project__card,
   .leadership__card {
@@ -1115,9 +1120,9 @@ body.dark-theme {
     padding-top: 2rem;
   }
 
-  .home__orbe {
+  /* .home__orbe {
     align-self: flex-end;
-  }
+  } */
 
   .home__data {
     padding-bottom: 2rem;
@@ -1234,18 +1239,18 @@ body.dark-theme {
     column-gap: 3.5rem;
   }
 
-  .home__orbe {
+  /* .home__orbe {
     width: 504px;
     height: 611px;
     border-radius: 256px 256px 0 0;
-  }
+  } */
 
-  .home__img {
+  /* .home__img {
     width: 472px;
     height: 634px;
     border-radius: 236px 236px 12px 12px;
     bottom: -2.5rem;
-  }
+  } */
 
   .project__container,
   .leadership__container {

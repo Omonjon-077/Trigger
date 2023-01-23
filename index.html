@@ -127,13 +127,13 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
     <!--==================== MAIN ====================-->
     <main class="main">
         <!--==================== HOME ====================-->
-        <section class="home section" id="home">
+        <section class="home section position-relative" id="home">
             <div class="home__container container grid">
                 <div class="home__data">
-                    <h1 class="home__title">
+                    <h1 class="home__title z-index-9">
                         The <br> Trigger <br> IT Company
                     </h1>
-                    <p class="home__description">
+                    <p class="home__description z-index-9">
                         Develop and modernize your business with us. Convenient and easy to work with customers
                     </p>
 
@@ -174,14 +174,19 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
                     </div>
                 </div>
 
-                <div class="home__images">
-                    <div class="home__orbe"></div>
+                <div class="home__images position-relative z-index-9">
+                    <!-- <div class="home__orbe"></div>
 
                     <div class="home__img">
                         <img src="img/trigger-work-room.jpg" alt="home">
-                    </div>
+                    </div> -->
+
+                    <lottie-player autoplay loop mode="normal"
+                        src="camputer.json" style="width: 100%">
+                    </lottie-player>
                 </div>
             </div>
+            <div id="particles-js" class="particles__js"></div>
         </section>
 
         <!--==================== LOGOS ====================-->
@@ -446,7 +451,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
                             <div class="leadership__data">
                                 <h2 class="leadership__rank">
-                                    <span><i class="bx bx-user"></i></span>General Devloper
+                                    <span><i class="bx bx-user"></i></span>General Developer
                                 </h2>
                                 <h3 class="leadership__title">
                                     Shohrux Haqberdiyev
@@ -480,7 +485,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
                             <div class="leadership__data">
                                 <h2 class="leadership__rank">
-                                    <span><i class="bx bx-user"></i></span>Android Devloper
+                                    <span><i class="bx bx-user"></i></span>Android Developer
                                 </h2>
                                 <h3 class="leadership__title">
                                     Ziyoviddin Sirojiddinov
@@ -497,7 +502,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
                             <div class="leadership__data">
                                 <h2 class="leadership__rank">
-                                    <span><i class="bx bx-user"></i></span>Backend Devloper
+                                    <span><i class="bx bx-user"></i></span>Backend Developer
                                 </h2>
                                 <h3 class="leadership__title">
                                     Shohrux Raimhonov
@@ -514,7 +519,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
                             <div class="leadership__data">
                                 <h2 class="leadership__rank">
-                                    <span><i class="bx bx-user"></i></span>Frontend Devloper
+                                    <span><i class="bx bx-user"></i></span>Frontend Developer
                                 </h2>
                                 <h3 class="leadership__title">
                                     Omonjon Sobirov
@@ -531,7 +536,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
                             <div class="leadership__data">
                                 <h2 class="leadership__rank">
-                                    <span><i class="bx bx-user"></i></span>Frontend Devloper
+                                    <span><i class="bx bx-user"></i></span>Frontend Developer
                                 </h2>
                                 <h3 class="leadership__title">
                                     Sirojiddin Qutbitdinov
@@ -548,7 +553,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
                             <div class="leadership__data">
                                 <h2 class="leadership__rank">
-                                    <span><i class="bx bx-user"></i></span>Frontend Devloper
+                                    <span><i class="bx bx-user"></i></span>Frontend Developer
                                 </h2>
                                 <h3 class="leadership__title">
                                     Abdurauf Sobirov
@@ -692,7 +697,7 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
-        <div id="particles-js" class="particles__js"></div>
+        <!-- <div id="particles-js" class="particles__js"></div> -->
         <div class="footer__container container grid">
             <div class="">
                 <a href="#!" class="footer__logo">
@@ -866,6 +871,9 @@ c-107 -70 -166 -167 -167 -275 l-1 -60 78 -3 c75 -3 77 -2 87 23 6 15 10 39
 
     <!--=============== JQUERY JS ===============-->
     <script src="js/jquery-3.6.3.min.js"></script>
+
+    <!--=============== LOTTIE-PLAYER JS ===============-->
+    <script src="js/lottie-player.js"></script>
 
     <!--=============== PARTICLE JS ===============-->
     <script src="js/particles.js"></script>
