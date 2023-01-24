@@ -154,7 +154,8 @@ body.dark-theme {
 .dark-theme .contact__orbe,
 .dark-theme .contact__card i,
 .dark-theme .contact__card-button,
-.dark-theme .subscribe__container {
+.dark-theme .subscribe__container,
+.dark-theme .modal-feedback .modal-content {
   background-color: var(--container-color);
 }
 
@@ -205,6 +206,16 @@ body.dark-theme {
   }
 }
 
+.dark-theme .modal-feedback .modal-content input {
+  background-color: #333;
+  border-color: #545454 !important;
+  color: var(--bs-white);
+}
+
+.dark-theme .modal-feedback .modal-content :is(.modal-header, .modal-footer, .col-form-label) {
+  border-color: #545454 !important;
+  color: var(--title-color);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container-self {
@@ -503,6 +514,15 @@ body.dark-theme {
 }
 
 .logos__img img:hover {
+  opacity: 1;
+}
+
+.logos__img svg {
+  opacity: .5;
+  transition: opacity .4s;
+}
+
+.logos__img:hover svg {
   opacity: 1;
 }
 
@@ -821,6 +841,7 @@ body.dark-theme {
   width: auto;
   padding-top: 3em;
   margin-top: 15px;
+  column-gap: 15px;
 }
 
 .testimonialsSwiper .swiper-nav-wrapper .swiper-button-next,
@@ -830,14 +851,6 @@ body.dark-theme {
   left: auto;
   right: auto;
   position: relative !important;
-}
-
-.testimonialsSwiper .swiper-nav-wrapper .swiper-button-prev {
-  right: calc(5% - 3rem);
-}
-
-.testimonialsSwiper .swiper-nav-wrapper .swiper-button-next {
-  left: calc(5% - 3rem);
 }
 
 .testimonialsSwiper .swiper-nav-wrapper .swiper-button-next:after,
@@ -1033,6 +1046,7 @@ body.dark-theme {
 
 .subscribe__button:hover {
   background-color: var(--first-color);
+  color: var(--text-color);
 }
 
 /*=============== FOOTER ===============*/
@@ -1193,6 +1207,17 @@ body.dark-theme {
 /* Show Scroll Up*/
 .show-scroll {
   bottom: 8rem;
+}
+
+.modal-feedback .form-control:focus {
+  /* box-shadow: none; */
+  border-color: initial;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.modal-feedback .btn-primary{
+  color: var(--first-color);
+  color: white;
 }
 
 /*=============== BREAKPOINTS ===============*/
