@@ -275,11 +275,11 @@ themeButton.addEventListener('click', () => {
 
 /*=============== ENTER INPUT ===============*/
 var input = document.getElementById("comment");
-input.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    document.getElementById("modal-feedback-btn").click();
-  }
+input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("modal-feedback-btn").click();
+    }
 });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
