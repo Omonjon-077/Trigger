@@ -545,6 +545,8 @@ body.dark-theme {
   height: 200px;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project__data {
