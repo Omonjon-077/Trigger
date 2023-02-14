@@ -1,3 +1,10 @@
+/*=============== LOADER ===============*/
+document.addEventListener('DOMContentLoaded', function (eventObject) {
+    $('.load').fadeIn();
+})
+window.addEventListener("load", function (eventObject) {
+    $('.load').fadeOut("slow");
+});
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
     const header = document.getElementById('header')

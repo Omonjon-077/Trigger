@@ -252,6 +252,25 @@ body.dark-theme {
   /* For the animations ScrollReveal*/
 }
 
+/*=============== LOADER ===============*/
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
+  /* background-color: rgba(14, 17, 31, 255); */
+  background-color: var(--body-color);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.load .load-gif {
+  width: 500px;
+}
+
 /*=============== HEADER & NAV ===============*/
 .header {
   position: fixed;
@@ -1292,6 +1311,10 @@ body.dark-theme {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+  .load .load-gif {
+    width: 300px;
+  }
+
   .nav__menu {
     width: 342px;
   }
