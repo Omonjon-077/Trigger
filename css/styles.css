@@ -268,7 +268,7 @@ body.dark-theme {
 }
 
 .load .load-gif {
-  width: 500px;
+  width: 300px;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -1312,7 +1312,7 @@ body.dark-theme {
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .load .load-gif {
-    width: 300px;
+    width: 500px;
   }
 
   .nav__menu {
